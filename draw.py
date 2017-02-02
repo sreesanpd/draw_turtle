@@ -16,7 +16,7 @@ def draw_square():
 	brad.color("blue")
 	brad.speed(1)
 
-	for i in [1,2,3,4]:
+	for i in range(1,5):
 		brad.forward(100)
 		brad.right(90)
 
@@ -29,9 +29,11 @@ def draw_circle():
 
 	angie.left(40)
 	angie.circle(120)
-	
-	
-draw_canvas()
-draw_square()
-draw_circle()
-close_canvas()
+
+def draw_art():
+	draw_canvas()
+	draw_square()	
+	draw_circle()
+	close_canvas()
+
+draw_art()	
