@@ -23,15 +23,18 @@ def draw_art():
 	
 	brad = turtle.Turtle()
 	brad.shape("turtle")
-	brad.color("blue")
+	brad.color("yellow")
 	brad.speed(5)
-	draw_square(brad)	
 
-	angie = turtle.Turtle()
-	angie.shape("arrow")
-	angie.color("yellow")
-	angie.speed(7)
-	draw_circle(angie)
+	for i in range(1,37):
+		draw_square(brad)	
+		brad.right(10)
+
+#	angie = turtle.Turtle()
+#	angie.shape("arrow")
+#	angie.color("blue")
+#	angie.speed(7)
+#	draw_circle(angie)
 
 	close_canvas()
 
